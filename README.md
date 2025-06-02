@@ -19,8 +19,7 @@ Datasets can be found in ```../dataset/```
 ### Learning node representation
 ```
 python main.py --experiment_type train
-```
-The subgraphs will be generated under ```./graphFair_subgraph/``` at the first time of running. If the files already exist, the subgraph data will be directly loaded. The true counterfactuals for evaluation are in ```./graphFair_subgraph/cf/```, and the augmented data is in ```./graphFair_subgraph/aug/```. The trained GEAR model can be saved in ```./models_save/```.
+At first run, create an empty `graphFair_subgraph` folder inside `src`. The subgraphs will be generated under `./graphFair_subgraph/` the first time you run the experiment. If the files already exist, the subgraph data will be directly loaded. The true counterfactuals for evaluation are in `./graphFair_subgraph/cf/`, and the augmented data is in `./graphFair_subgraph/aug/`. The trained GEAR model can be saved in `./models_save/`.
 
 ### References
 The code is the implementation of this paper:
